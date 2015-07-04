@@ -22,3 +22,8 @@ find ~ -type d -exec du -sk {} \;
 
 #Let's not run this one. It deletes files over 100 days old
 #find . -mtime +100 -exec rm {} \;
+
+#Remove .DS_Store files
+#find . -name .DS_Store -exec rm {} \;
+
+
