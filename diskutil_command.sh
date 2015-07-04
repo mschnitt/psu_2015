@@ -1,13 +1,9 @@
 #!/bin/bash
 
-open /Applications
+diskutil list
 
-open /Applications/Utilities/Console.app
+diskutil info /dev/disk0
 
-open http://www.disneyanimation.com
+diskutil info /dev/disk0s1
 
-open -a safari http://www.google.com
-
-open /Library/Desktop\ Pictures/Frog.jpg
-
-open /Library/Desktop\ Pictures/Yosemite.jpg
+diskutil

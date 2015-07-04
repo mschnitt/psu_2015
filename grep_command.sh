@@ -1,13 +1,13 @@
 #!/bin/bash
 
-open /Applications
+grep root /etc/passwd
 
-open /Applications/Utilities/Console.app
+grep -i version /Applications/Safari.app/Contents/Info.plist
 
-open http://www.disneyanimation.com
+grep -i version /Applications/*.app/Contents/Info.plist
 
-open -a safari http://www.google.com
+find ~ -type d | grep Mozilla
 
-open /Library/Desktop\ Pictures/Frog.jpg
+ls /Applications | grep i
 
-open /Library/Desktop\ Pictures/Yosemite.jpg
+ls /Applications | grep Safari

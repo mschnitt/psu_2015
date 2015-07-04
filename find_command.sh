@@ -1,13 +1,24 @@
 #!/bin/bash
 
-open /Applications
+find /Applications -name "Terminal.app"
 
-open /Applications/Utilities/Console.app
+find /Applications -mtime -5 -name "*.app"
 
-open http://www.disneyanimation.com
+find . -type dir -uid root
 
-open -a safari http://www.google.com
+find ~ -type l
 
-open /Library/Desktop\ Pictures/Frog.jpg
+find /Volumes -type d -depth 2
 
-open /Library/Desktop\ Pictures/Yosemite.jpg
+sudo find /Volumes -type d -depth 2
+
+sudo find /Users -size +1000k
+
+sudo find /Users -size +1000k -mtime +2
+
+find ~ -type f -size +50000k -exec ls -l {}  \;
+
+find ~ -type d -exec du -sk {} \;
+
+#Let's not run this one. It deletes files over 100 days old
+#find . -mtime +100 -exec rm {} \;
