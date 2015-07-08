@@ -1,8 +1,9 @@
 #!/bin/bash
 
 #Make the file readable by everyone
+touch testfile
 chmod 444 testfile
-ls -l testfil
+ls -l testfile
 #or
 chmod a+r testfile
 ls -l testfile
@@ -22,13 +23,13 @@ ls -l testfile
 
 #Give all permission to owner. Read Only to everyone else
 chmod 744 testfile
-ls -la testfile
+ls -l testfile
 #or
 chmod a-rwx testfile
 chmod u+rwx testfile
 chmod g+r testfile
 chmod a+r testfile
-ls -la testfile
+ls -l testfile
 
 touch testfile
 chown guest testfile

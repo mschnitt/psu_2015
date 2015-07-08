@@ -15,7 +15,6 @@ find . -type d -uid root
 #Symbolic Links in my home directory
 find ~ -type l
 
-
 #Sometimes, permissions are a problem, use sudo!
 find /Volumes -type d -depth 2
 

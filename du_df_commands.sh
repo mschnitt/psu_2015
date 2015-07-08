@@ -1,9 +1,9 @@
 #!/bin/bash
 
 #How much space am I using in /Applications?
-du -ks /Applications
+du -ks /Applications/Safari.app
 
-#Users Folders?
+#Space taken by users folders?
 sudo du -ks /Users
 
 #Personal Library Folder and list all files?
