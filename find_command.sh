@@ -33,6 +33,7 @@ find ~ -type f -size +50000k -exec ls -l {}  \;
 find ~ -type d -exec du -sk {} \;
 
 #Also useful for removing files.. but let’s not run this one.
+#This removes everything more than 100 days old. 
 #find . -mtime +100 -exec rm {} \;
 
 #Remove .DS_Store files
