@@ -25,7 +25,7 @@ sudo find /Volumes -type d -depth 2
 sudo find /Users -size +1000k
 
 #  …and modified in the last 2 days
-sudo find /Users -size +1000k -mtime +2
+sudo find /Users -size +1000k -mtime -2
 
 find ~ -type f -size +50000k -exec ls -l {}  \;
 

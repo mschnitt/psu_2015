@@ -28,9 +28,6 @@ ls -la ~
 #Multiple paths 
 ls /usr/bin /usr/sbin/ /bin
 
-#What if you know some of the path?
-ls /usr/bin/ds*
- 
 #Three characters, d, s, and anything else.
 ls /usr/bin/ds?
 
